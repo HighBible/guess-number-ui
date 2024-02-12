@@ -4,7 +4,6 @@
 }
 
 body {
-  border: 1px solid #000;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -19,33 +18,34 @@ body {
   }
 }
 .result {
-  height: 20vw;
+  height: 256px;
+  font-size: 256px;
   width: 100vw;
   font-weight: 700;
-  font-size: 20vw;
   position: relative;
-  animation: moveText 3s infinite linear;
+  animation: moveText 3s infinite linear; 
 }
+
+
 .txResult {
-  text-align: center;
+  height: 256px;
   position: absolute;
   width: 100vw;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  height: 20vw;
+  left: 0;
+  top: 0;
   background: orangered;
   color: wheat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .txResult2 {
   left: 100%;
-  top: 50%;
-  transform: translateY(-50%);
-  /* animation: moveText 1s 1s; */
 }
+
 .container {
-  border: 1px solid #000;
   text-align: center;
   height: 40vw;
   display: flex;
@@ -60,7 +60,6 @@ h1 {
 
 p {
   font-size: 2vw;
-
 }
 
 .inputArea {
@@ -68,6 +67,7 @@ p {
   border-radius: 10px;
   border: none;
   border: 1px solid orangered;
+
 }
 
 button {
@@ -79,13 +79,31 @@ button {
   /* font-size: 2vw; */
 }
 
+.thumb {
+  position: absolute;
+  width: 70vw;
+  height: 20vw;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
 
-@media (min-width: 1280px) {
+.thumbs {
+  width: 5vw;
+  height: 5vw;
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+
+@media (max-width: 1280px) {
 
   .result {
-    background: palegoldenrod;
-    height: 256px;
-    font-size: 256px;
+    font-size: 20vw;
   }
 
   .container {

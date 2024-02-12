@@ -8,21 +8,22 @@
 </head>
 <body>
   <div class="result">
-    <div class="txResult">WRONG!</div>
-    <div class="txResult txResult2">WRONG!</div>
+    <div class="txResult">Welcome!</div>
+    <div class="txResult txResult2">Welcome!</div>
   </div>
   <div class="container">
     <h1>Guess my number &#128540</h1>
     <div class="explain">
-      <p>1부터 100까지의 숫자 중 하나의 숫자를 맞춰주세요!</p>
-      <p>남은 기회:</p>
+      <p class="warning">1부터 100까지의 수를 입력해주세요!</p>
+      <p class="chance">남은 기회: 5번</p>
     </div>
     <div class="inputWrap">
       <input type="number" class="inputArea">
-      <button>Go!</button>
-      <button>다시하기</button>
+      <button class="btnGo">Go!</button>
+      <button class="btnRe">다시하기</button>
     </div>
   </div>
+  <div class="thumb"></div>
   <script src="main.js"></script>  
 </body>
 </html>
