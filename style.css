@@ -55,7 +55,6 @@ body {
 
 h1 {
  font-size: 5vw;
-
 }
 
 p {
@@ -116,5 +115,28 @@ button {
 
   p {
     font-size: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .result {
+    height: 34vw;
+    font-size: 20vw;
+  }
+
+  .txResult {
+    height: 34vw;
+  }
+
+  .container {
+    height: 60vw;
+  }
+
+  h1{
+    font-size: 8.3vw;
+  }  
+  
+  p {
+    font-size: 3.3vw;
   }
 }
